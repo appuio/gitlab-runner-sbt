@@ -10,6 +10,8 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y sbt && \
     apt-get clean && \
+    curl -s https://raw.githubusercontent.com/paulp/sbt-extras/master/sbt > ~/bin/sbt && \
+    chmod 0755 ~/bin/sbt && \
     rm -rf /var/lib/apt/lists/*
 
 CMD ["sh"]
