@@ -1,6 +1,6 @@
 # use the openjdk base image
 # TODO: use alpine
-FROM openjdk:8-jre
+FROM openjdk:8-jdk
 
 # install SBT
 RUN apt-get update && \
