@@ -9,7 +9,6 @@ RUN apt-get update && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823 && \
     apt-get update && \
     apt-get install -y sbt && \
-    apt-get remove --purge -y apt-transport-https $(apt-mark showauto) && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
