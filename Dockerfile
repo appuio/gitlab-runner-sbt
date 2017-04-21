@@ -2,7 +2,7 @@
 # TODO: use alpine?
 FROM openjdk:8-jdk
 
-ENV SBT_VERSION 0.13.13
+ENV SBT_VERSION 0.13.15
 
 # install SBT
 RUN set -x && \
